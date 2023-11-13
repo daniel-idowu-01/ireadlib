@@ -41,13 +41,13 @@ async function run() {
     })
 
     // get all books from the database
-    app.get('/all-books', async (req, res) => {
+    /* app.get('/all-books', async (req, res) => {
       const books = bookCollections.find();
       const result = await books.toArray();
       res.send(result);
-    })
+    }) */
 
-    // updata a book data
+    // update a book data
     app.patch('/book/:id', async (req, res) => {
       const id = req.params.id;
       const updatedBookData = req.body;
@@ -70,6 +70,17 @@ async function run() {
       const filter = { _id: new ObjectId(id) }
       const result = await bookCollections.deleteOne(filter)
       res.send(result);
+    })
+
+    // to find book by category
+    app.get('/all-books', async (req, res) => {
+      let query = {};
+      if (req.query?.category) {
+        query = {category: req.query.category}
+      }
+
+      const result = await bookCollections.find(query).toArray();
+      res.send(result)
     })
 
 
