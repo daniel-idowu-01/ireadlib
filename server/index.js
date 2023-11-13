@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 })
 
 // database connection
-const { MongoClient, ServerApiVersion } = require('mongodb');
+const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 const uri = "mongodb+srv://danielidowu:danielidowu@cluster0.lxulz2t.mongodb.net/?retryWrites=true&w=majority&appName=AtlasApp";
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
@@ -46,6 +46,32 @@ async function run() {
       const result = await books.toArray();
       res.send(result);
     })
+
+    // updata a book data
+    app.patch('/book/:id', async (req, res) => {
+      const id = req.params.id;
+      const updatedBookData = req.body;
+      const filter = { _id: new ObjectId(id) }
+      const updatedDoc = {
+        $set: {
+          ...updatedBookData
+        },
+      }
+      const options = { upsert: true }
+
+      // update logic
+      const result = await bookCollections.updateOne(filter, updatedDoc, options)
+      res.send(result);
+    })
+
+    // delete a book from the database
+    app.delete('/book/:id', async (req, res) => {
+      const id = req.params.id;
+      const filter = { _id: new ObjectId(id) }
+      const result = await bookCollections.deleteOne(filter)
+      res.send(result);
+    })
+
 
     // Send a ping to confirm a successful connection
     await client.db("admin").command({ ping: 1 });
