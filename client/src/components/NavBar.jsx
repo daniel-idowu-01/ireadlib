@@ -60,10 +60,20 @@ const NavBar = () => {
 
       {/* sidebar */}
       <section
-        className={`${sidebar ? '-left-1/2' : '-left-0'} transition-all absolute w-1/2 top-0 h-screen sm:hidden bg-red-500`}
+        className={`${sidebar ? '-left-1/2' : '-left-0'} transition-all absolute w-1/2 top-0 h-screen sm:hidden bg-red-500 z-20`}
       >
-        <div>
-          Hello
+        <div className='relative top-14 flex flex-col gap-10'>
+          {
+            navLinks.map((link) => (
+              <Link
+                key={link.path}
+                to={`/${link.path}`}
+                className='hover:opacity-80 hover:cursor-pointer mx-auto'
+              >
+                {link.title}
+              </Link>
+            ))
+          }
         </div>
       </section>
     </nav>
