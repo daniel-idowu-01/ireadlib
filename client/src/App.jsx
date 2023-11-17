@@ -4,7 +4,7 @@ import { Home, About, Blog, Shop, SellEbook } from "./pages"
 
 function App() {
   return (
-    <div className="inter">
+    <div className="inter overflow-x-hidden">
       <NavBar />
 
       <Routes>
