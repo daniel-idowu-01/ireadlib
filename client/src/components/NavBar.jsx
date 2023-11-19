@@ -60,7 +60,7 @@ const NavBar = () => {
 
       {/* sidebar */}
       <section
-        className={`${sidebar ? '-left-1/2' : '-left-0'} transition-all absolute w-1/2 top-0 h-screen sm:hidden bg-red-500 z-20`}
+        className={`${sidebar ? '-left-0' : '-left-1/2'} transition-all absolute w-1/2 top-0 h-screen sm:hidden bg-red-500 z-20`}
       >
         <div className='relative top-14 flex flex-col gap-10'>
           {

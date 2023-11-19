@@ -4,7 +4,7 @@ import Banner from './Banner'
 const Header = () => {
   return (
     <section
-      className='flex flex-col sm:flex-row w-full items-center justify-between px-10 sm:px-20 py-10 sm:py-20 bg-orange bg-opacity-10'
+      className='flex flex-col sm:flex-row gap-10 sm:gap-0 w-full items-center justify-between px-10 sm:px-20 py-10 sm:py-20 bg-orange bg-opacity-10'
     >
       <article className='sm:w-1/2 flex flex-col gap-8'>
         <h3 className='font-semibold text-3xl sm:text-5xl leading-snug sm:leading-[1.5]'>
