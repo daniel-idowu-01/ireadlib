@@ -16,14 +16,13 @@ import { Pagination } from 'swiper/modules';
 const Featured = () => {
 
   const [books, setBooks] = useState([])
+  const slicedBooks = books.slice(0, 8)
 
   useEffect(() => {
     axios.get('http://localhost:5000/all-books')
       .then(res => setBooks(res.data))
       .catch(error => console.log(error))
   }, [])
-  
-  console.log(books)
 
   return (
     <div className='px-10 sm:px-20 py-10 sm:py-20'>
@@ -52,7 +51,7 @@ const Featured = () => {
         modules={[Pagination]}
         className="mySwiper relative top-5"
       >
-        {books.map(book => (
+        {slicedBooks.map(book => (
           <SwiperSlide key={book._id}>
             <Link to={`/book/${book._id}`}>
               <BookCard {...book} />

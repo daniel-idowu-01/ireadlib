@@ -18,7 +18,8 @@ const SingleBook = () => {
 
   return (
     <div>
-      {id}
+      <p>{bookData.authorName}</p>
+      <p>{bookData.bookTitle}</p>
     </div>
   )
 }

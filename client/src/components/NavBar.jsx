@@ -54,7 +54,9 @@ const NavBar = () => {
         </div>
 
         <div onClick={() => setSideBar(!sidebar)}>
-          =
+          <span className="material-symbols-outlined">
+            menu
+          </span>
         </div>
       </section>
 

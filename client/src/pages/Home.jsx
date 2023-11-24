@@ -1,11 +1,12 @@
 import React from 'react'
-import { Header, Featured } from '../components'
+import { Header, Featured, FavBook } from '../components'
 
 const Home = () => {
   return (
     <section>
       <Header />
       <Featured />
+      <FavBook />
     </section>
   )
 }

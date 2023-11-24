@@ -14,13 +14,13 @@ const Header = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc non blandit massa enim nec dui. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue. Lacus vestibulum sed arcu non odio euismod lacinia. Mi tempus imperdiet nulla malesuada.
         </p>
 
-        <div>
+        <div className='flex'>
           <input
             type="text" name="" id=""
             placeholder='Search a book'
             className='bg-white outline-none px-4 py-2'
           />
-          <button className='bg-orange px-6 py-2 hover:bg-opacity-50 transition-all'>
+          <button className='bg-orange px-3 sm:px-6 py-2 hover:bg-opacity-50 transition-all'>
             Search
           </button>
         </div>
