@@ -4,7 +4,11 @@ import Banner from "./Banner";
 import BookCard from "./BookCard";
 import Featured from "./Featured";
 import FavBook from "./FavBook";
+import PromoBanner from "./PromoBanner";
+import OtherBooks from "./OtherBooks";
+import Review from "./Review";
+import TheFooter from "./TheFooter";
 
 export {
-  NavBar, Header, Banner, BookCard, Featured, FavBook
+  NavBar, Header, Banner, BookCard, Featured, FavBook, PromoBanner, OtherBooks, Review, TheFooter
 }
