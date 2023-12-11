@@ -25,8 +25,10 @@ const Featured = () => {
   }, [])
 
   return (
-    <div className='px-10 sm:px-20 py-10 sm:py-20'>
-      <h2  className='font-semibold text-3xl sm:text-5xl leading-snug sm:leading-[1.5] text-center'>Best Seller Books</h2>
+    <div className='px-10 md:px-20 py-10 md:py-20'>
+      <h2 className='font-semibold text-3xl md:text-5xl leading-snug md:leading-[1.5] text-center'>
+        Best Seller Books
+      </h2>
 
       <Swiper
         slidesPerView={1}

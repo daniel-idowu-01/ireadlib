@@ -5,7 +5,7 @@ import { BsDribbble, BsFacebook, BsGithub, BsInstagram, BsTwitter } from 'react-
 const TheFooter = () => {
   return (
     <Footer bgDark>
-      <div className="w-full px-4 lg:px-24">
+      <div className="w-full px-4 lg:px-24 py-10">
         <div className="grid w-full grid-cols-2 gap-8 px-6 py-8 md:grid-cols-4">
           <div>
             <Footer.Title title="Company" />
