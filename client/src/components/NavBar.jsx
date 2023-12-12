@@ -22,7 +22,7 @@ const NavBar = () => {
     },
     {
       "title": "Sell Your Book",
-      "path": "sell-your-book"
+      "path": "admin/dashboard"
     },
     {
       "title": "Blog",
@@ -62,7 +62,7 @@ const NavBar = () => {
 
       {/* sidebar */}
       <section
-        className={`${sidebar ? '-left-0' : '-left-1/2'} transition-all absolute w-1/2 top-0 h-screen sm:hidden bg-red-500 z-20`}
+        className={`${sidebar ? '-left-0' : '-left-1/2'} transition-all absolute w-1/2 top-0 h-screen sm:hidden bg-white z-20`}
       >
         <div className='relative top-14 flex flex-col gap-10'>
           {

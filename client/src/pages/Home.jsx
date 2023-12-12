@@ -1,15 +1,17 @@
 import React from 'react'
-import { Header, Featured, FavBook, PromoBanner, OtherBooks, Review } from '../components'
+import { NavBar, Header, Featured, FavBook, PromoBanner, OtherBooks, Review, TheFooter } from '../components'
 
 const Home = () => {
   return (
     <section>
+      <NavBar />
       <Header />
       <Featured />
       <FavBook />
       <PromoBanner />
       <OtherBooks />
       <Review />
+      <TheFooter />
     </section>
   )
 }

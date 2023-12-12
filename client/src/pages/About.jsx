@@ -1,9 +1,16 @@
 import React from 'react'
+import { NavBar, TheFooter } from '../components'
 
 const About = () => {
   return (
-    <div>
-      About
+    <div className="min-h-screen">
+      <NavBar />
+      
+      <div className='min-h-screen'>
+        
+      </div>
+
+      <TheFooter />
     </div>
   )
 }

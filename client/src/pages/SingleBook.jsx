@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { NavBar, TheFooter } from '../components';
 import { useParams } from 'react-router-dom'
 import axios from 'axios';
 
@@ -18,8 +19,14 @@ const SingleBook = () => {
 
   return (
     <div>
-      <p>{bookData.authorName}</p>
-      <p>{bookData.bookTitle}</p>
+      <NavBar />
+      
+      <div>
+        <p>{bookData.authorName}</p>
+        <p>{bookData.bookTitle}</p>
+      </div>
+
+      <TheFooter />
     </div>
   )
 }
