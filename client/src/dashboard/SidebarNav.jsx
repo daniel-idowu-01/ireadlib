@@ -1,24 +1,25 @@
 import { Sidebar } from 'flowbite-react';
 import { BiBuoy } from 'react-icons/bi';
-import { HiArrowSmRight, HiChartPie, HiInbox, HiShoppingBag, HiTable, HiUser, HiViewBoards } from 'react-icons/hi';
+import Img from '../assets/images/profile.jpg'
+import { HiArrowSmRight, HiChartPie, HiInbox, HiOutlineCloud, HiShoppingBag, HiTable, HiUser, HiViewBoards } from 'react-icons/hi';
 
 const SidebarNav = () => {
   return (
     <Sidebar aria-label="Sidebar with content separator example">
-      <Sidebar.Logo href="#" img="/favicon.svg" imgAlt="Flowbite logo">
+      <Sidebar.Logo href="#" img={Img} imgAlt="Flowbite logo">
         Flowbite
       </Sidebar.Logo>
       
       <Sidebar.Items>
         <Sidebar.ItemGroup>
-          <Sidebar.Item href="#" icon={HiChartPie}>
+          <Sidebar.Item href="/admin/dashboard" icon={HiChartPie}>
             Dashboard
           </Sidebar.Item>
-          <Sidebar.Item href="#" icon={HiViewBoards}>
-            Kanban
+          <Sidebar.Item href="/admin/dashboard/upload" icon={HiOutlineCloud}>
+            Upload Book
           </Sidebar.Item>
-          <Sidebar.Item href="#" icon={HiInbox}>
-            Inbox
+          <Sidebar.Item href="/admin/dashboard/manage" icon={HiInbox}>
+            Manage Books
           </Sidebar.Item>
           <Sidebar.Item href="#" icon={HiUser}>
             Users
@@ -26,11 +27,11 @@ const SidebarNav = () => {
           <Sidebar.Item href="#" icon={HiShoppingBag}>
             Products
           </Sidebar.Item>
-          <Sidebar.Item href="#" icon={HiArrowSmRight}>
+          <Sidebar.Item href="/login" icon={HiArrowSmRight}>
             Sign In
           </Sidebar.Item>
-          <Sidebar.Item href="#" icon={HiTable}>
-            Sign Up
+          <Sidebar.Item href="/logout" icon={HiTable}>
+            Logout
           </Sidebar.Item>
         </Sidebar.ItemGroup>
         <Sidebar.ItemGroup>
