@@ -14,8 +14,6 @@ const SingleBook = () => {
       .catch(error => console.log(error))
   }, [])
 
-  console.log(bookData)
-
 
   return (
     <div>
