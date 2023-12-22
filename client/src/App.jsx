@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom"
-import { Home, About, Blog, Shop, SellEbook, SingleBook } from "./pages"
+import { Home, About, Blog, Shop, SellEbook, SingleBook, SignUp, Login } from "./pages"
 import { Dashboard, DashboardLayout, UploadBook, ManageBooks, EditBooks } from "./dashboard/"
 
 function App() {
@@ -13,6 +13,8 @@ function App() {
           <Route path='/sell-your-book' element={<SellEbook />} />
           <Route path='/blog' element={<Blog />} />
           <Route path='/book/:id' element={<SingleBook />} />
+          <Route path='/sign-up' element={<SignUp />} />
+          <Route path='/login' element={<Login />} />
 
           <Route element={<DashboardLayout />}>
             <Route path='/admin/dashboard' element={<Dashboard />} />
