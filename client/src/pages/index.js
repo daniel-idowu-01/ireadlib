@@ -6,7 +6,8 @@ import SellEbook from './SellEbook'
 import SingleBook from "./SingleBook";
 import SignUp from "./SignUp";
 import Login from "./Login";
+import LogOut from "./LogOut";
 
 export {
-  Home, About, Blog, Shop, SellEbook, SingleBook, SignUp, Login
+  Home, About, Blog, Shop, SellEbook, SingleBook, SignUp, Login,  LogOut
 }

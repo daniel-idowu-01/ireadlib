@@ -1,9 +1,8 @@
 import React, { useContext, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
-import { FloatingLabel, Button } from 'flowbite-react';
+import { FloatingLabel, Button, Spinner } from 'flowbite-react';
 import { AuthContext } from '../context/AuthProvider';
 import google from '../assets/images/google-logo.svg'
-import { GoogleAuthProvider } from 'firebase/auth';
 
 const SignUp = () => {
 
@@ -11,6 +10,7 @@ const SignUp = () => {
   const {createUser, loginWithGoogle} = useContext(AuthContext);
   const [formData, setFormData] = useState([]) 
   const [error, setError] = useState('')
+  const [isLoading, setIsLoading] = useState(false)
 
   // function to update form data on user input
   const handleFormChange = (e) => {
@@ -23,14 +23,17 @@ const SignUp = () => {
   // function to submit form data
   const handleSubmit = (e) => {
     e.preventDefault();
+    setIsLoading(true);
     createUser(formData.email, formData.password)
       .then((userCredential) => {
         // Signed up 
         const user = userCredential.user;
+        setIsLoading(false)
         alert('Account Created Successfully!')
         navigate('/login')
       })
       .catch((error) => {
+        setIsLoading(false)
         const errorCode = error.code;
         const errorMessage = error.message;
         setError(errorMessage)
@@ -59,7 +62,10 @@ const SignUp = () => {
           <FloatingLabel variant="outlined" label="Email" name='email' onChange={handleFormChange} />
           <FloatingLabel variant="outlined" label="Password" name='password' onChange={handleFormChange} />
           <FloatingLabel variant="outlined" label="Confirm Password" />
-          <Button type='submit'>Sign Up</Button>
+
+          <Button type='submit'>
+            {isLoading ? <Spinner /> : 'Sign Up'}
+          </Button>
 
           <p>
             Already have an account?

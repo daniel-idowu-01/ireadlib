@@ -75,7 +75,7 @@ const NavBar = () => {
           }
         </div>
 
-        <div onClick={() => setSideBar(!sidebar)}>
+        <div className='md:hidden' onClick={() => setSideBar(!sidebar)}>
           <span className="material-symbols-outlined">
             menu
           </span>
