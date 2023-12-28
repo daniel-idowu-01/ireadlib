@@ -17,14 +17,15 @@ const Shop = () => {
     <div>
       <NavBar />
 
-      <section className='px-10 md:px-20 py-10 md:pt-10 md:pb-20 min-h-screen'>
-        <h2 className=' font-semibold text-3xl md:text-5xl leading-snug md:leading-[1.5] text-center'>
+      <section className='px-10 md:px-20 py-20 md:pt-20 md:pb-20 min-h-screen'>
+        <h2 className='font-semibold text-3xl md:text-5xl leading-snug md:leading-[1.5] text-center'>
           All Books
         </h2>
         
         <div className='grid gap-8 my-12 md:grid-cols-3 lg:grid-cols-4'>
-          {books.map(book => (
+          {books.map((book, index) => (
             <Card
+              key={index}
               className="max-w-sm w-72 hover:cursor-pointer hover:scale-105"
             >
               <img src={book.imageURL} alt="" className='h-72' />

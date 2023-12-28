@@ -61,7 +61,7 @@ const Review = () => {
 
               <div className='mt-7'>
                 <p className='mb-5'>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, eius! Architecto culpa beatae, nam optio explicabo accusantium facilis recusandae aut! Inventore nisi veritatis error animi facere ex quibusdam dolor! Debitis?
+                  iREAD is a literary paradise! The vast selection and intuitive search options make it a breeze to find my favorite reads. The community aspect adds a personal touch – sharing recommendations with fellow book lovers is a delightful bonus. My bookshelf has never been more diverse, thanks to this fantastic e-library!
                 </p>
                 <Avatar
                   img={ProfileImage}
@@ -69,7 +69,7 @@ const Review = () => {
                   rounded
                   className='w-10 mb-4'
                 />
-                <h5 className='text-lg font-medium'>Mark Ping</h5>
+                <h5 className='text-lg font-medium'>Samantha R.</h5>
                 <p className='text-base'>CEO, Volab LTD</p>
               </div>
             </div>
@@ -87,7 +87,7 @@ const Review = () => {
 
               <div className='mt-7'>
                 <p className='mb-5'>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, eius! Architecto culpa beatae, nam optio explicabo accusantium facilis recusandae aut! Inventore nisi veritatis error animi facere ex quibusdam dolor! Debitis?
+                  As a voracious reader, I was thrilled to discover iREAD. The platform's sleek design and easy navigation make it a joy to explore. I appreciate the curated collections and the ability to find both popular titles and hidden gems. It has become my go-to destination for discovering new literary wonders!
                 </p>
                 <Avatar
                   img={ProfileImage}
@@ -95,7 +95,7 @@ const Review = () => {
                   rounded
                   className='w-10 mb-4'
                 />
-                <h5 className='text-lg font-medium'>Mark Ping</h5>
+                <h5 className='text-lg font-medium'>Alex K.</h5>
                 <p className='text-base'>CEO, Volab LTD</p>
               </div>
             </div>
@@ -113,7 +113,7 @@ const Review = () => {
 
               <div className='mt-7'>
                 <p className='mb-5'>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, eius! Architecto culpa beatae, nam optio explicabo accusantium facilis recusandae aut! Inventore nisi veritatis error animi facere ex quibusdam dolor! Debitis?
+                  iREAD is a reader's dream come true! The diverse range of genres and the user-friendly interface make it easy to find exactly what I'm looking for. The reviews and recommendations from fellow readers help me discover books I might have overlooked. This site has reignited my passion for reading.
                 </p>
                 <Avatar
                   img={ProfileImage}
@@ -121,7 +121,7 @@ const Review = () => {
                   rounded
                   className='w-10 mb-4'
                 />
-                <h5 className='text-lg font-medium'>Mark Ping</h5>
+                <h5 className='text-lg font-medium'>Emily M.</h5>
                 <p className='text-base'>CEO, Volab LTD</p>
               </div>
             </div>
@@ -139,7 +139,7 @@ const Review = () => {
 
               <div className='mt-7'>
                 <p className='mb-5'>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, eius! Architecto culpa beatae, nam optio explicabo accusantium facilis recusandae aut! Inventore nisi veritatis error animi facere ex quibusdam dolor! Debitis?
+                  I love the convenience of having an entire library at my fingertips. iREAD has transformed my reading experience. The ability to access my favorite books anytime, anywhere is a game-changer. The site's responsiveness and vast catalog make it an indispensable companion for any book lover.
                 </p>
                 <Avatar
                   img={ProfileImage}
@@ -147,7 +147,7 @@ const Review = () => {
                   rounded
                   className='w-10 mb-4'
                 />
-                <h5 className='text-lg font-medium'>Mark Ping</h5>
+                <h5 className='text-lg font-medium'>Jake H.</h5>
                 <p className='text-base'>CEO, Volab LTD</p>
               </div>
             </div>
@@ -165,7 +165,7 @@ const Review = () => {
 
               <div className='mt-7'>
                 <p className='mb-5'>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, eius! Architecto culpa beatae, nam optio explicabo accusantium facilis recusandae aut! Inventore nisi veritatis error animi facere ex quibusdam dolor! Debitis?
+                  iREAD has elevated my reading habits. The platform not only houses an extensive collection but also fosters a sense of community among readers. I've found hidden gems and engaged in thoughtful discussions with fellow book enthusiasts. It's more than just a library – it's a vibrant literary community!
                 </p>
                 <Avatar
                   img={ProfileImage}
@@ -173,7 +173,7 @@ const Review = () => {
                   rounded
                   className='w-10 mb-4'
                 />
-                <h5 className='text-lg font-medium'>Mark Ping</h5>
+                <h5 className='text-lg font-medium'>Lila B.</h5>
                 <p className='text-base'>CEO, Volab LTD</p>
               </div>
             </div>

@@ -50,13 +50,13 @@ const NavBar = () => {
   ]
 
   return (
-    <nav className='bg-transparent fixed top-0 left-0 right-0 z-20'>
+    <nav className={` fixed top-0 left-0 right-0 z-20`}>
       <section
-        className={`px-10 md:px-20 py-5 flex items-center justify-between ${isSticky ? 'sticky top-0 bg-white' : ''}`}
+        className={`px-10 md:px-20 py-5 flex items-center justify-between ${isSticky ? 'sticky top-0 bg-white' : 'bg-white'}`}
       >
         <div>
-          <p className='border-r-2 rounded-full border-orange p-2'>
-            TECH<span className='text-orange'>HUB</span>
+          <p className='font-bold border-r-2 rounded-full border-orange p-2'>
+            i<span className='text-orange'>READ</span>
           </p>
         </div>
 
@@ -80,7 +80,12 @@ const NavBar = () => {
             menu
           </span>
         </div>
-        <div>
+        <div className='hidden md:flex items-center'>
+          <img
+            className='w-10 h-10'
+            src="https://t4.ftcdn.net/jpg/02/62/76/57/360_F_262765707_7ipekmhWAQbIy61VGRdpWo4eHeuN6Ub3.jpg"
+            alt=""
+          />
           {
             user ? user.email : ''
           }
@@ -102,6 +107,18 @@ const NavBar = () => {
                 {link.title}
               </Link>
             ))
+          }
+        </div>
+        <div
+          className='mt-32 text-sm flex md:hidden justify-center items-center'
+        >
+          <img
+            className='w-5 h-5'
+            src="https://t4.ftcdn.net/jpg/02/62/76/57/360_F_262765707_7ipekmhWAQbIy61VGRdpWo4eHeuN6Ub3.jpg"
+            alt=""
+          />
+          {
+            user ? user.email : ''
           }
         </div>
       </section>

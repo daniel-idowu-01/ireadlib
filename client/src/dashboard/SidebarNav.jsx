@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { Sidebar } from 'flowbite-react';
 import { BiBuoy } from 'react-icons/bi';
 import Img from '../assets/images/profile.jpg'
-import { HiArrowSmRight, HiChartPie, HiInbox, HiOutlineCloud, HiShoppingBag, HiTable, HiUser, HiViewBoards } from 'react-icons/hi';
+import { HiArrowSmRight, HiChartPie, HiInbox, HiLogout, HiOutlineCloud, HiShoppingBag, HiTable, HiUser, HiViewBoards } from 'react-icons/hi';
 import { AuthContext } from '../context/AuthProvider'
 
 const SidebarNav = () => {
@@ -11,7 +11,11 @@ const SidebarNav = () => {
 
   return (
     <Sidebar aria-label="Sidebar with content separator example">
-      <Sidebar.Logo href="#" img={user.photoURL} imgAlt="Flowbite logo">
+      <Sidebar.Logo
+        href="#"
+        img='https://t4.ftcdn.net/jpg/02/62/76/57/360_F_262765707_7ipekmhWAQbIy61VGRdpWo4eHeuN6Ub3.jpg'
+        imgAlt="Flowbite logo"
+        >
         {user?.displayName || 'Demo User'}
       </Sidebar.Logo>
       
@@ -35,7 +39,7 @@ const SidebarNav = () => {
           <Sidebar.Item href="/login" icon={HiArrowSmRight}>
             Sign In
           </Sidebar.Item>
-          <Sidebar.Item href="/logout" icon={HiTable}>
+          <Sidebar.Item href="/logout" icon={HiLogout}>
             Logout
           </Sidebar.Item>
         </Sidebar.ItemGroup>

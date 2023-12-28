@@ -14,7 +14,7 @@ const FavBook = () => {
           Find Your Favorite <span className='text-orange'>Book Here!</span>
         </h2>
         <p className='text-lg'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc non blandit massa enim nec dui. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue. Lacus vestibulum sed arcu non odio euismod lacinia. Mi tempus imperdiet nulla malesuada.
+          Whether you're a seasoned bibliophile or a casual reader, finding your favorite book has never been more exhilarating. Navigate through our user-friendly interface, seamlessly organized genres, and curated collections to uncover hidden gems and revisit beloved classics. Our advanced search features make it easy to locate that elusive title, author, or genre you've been yearning for.
         </p>
         <div className='flex flex-col sm:flex-row justify-between gap-6 sm:w-3/4 my-5'>
           <div>

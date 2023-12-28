@@ -4,14 +4,14 @@ import Banner from './Banner'
 const Header = () => {
   return (
     <section
-      className='flex flex-col md:flex-row gap-10 md:gap-0 w-full items-center justify-between px-10 md:px-20 py-32 md:py-40 bg-orange bg-opacity-10'
+      className='flex flex-col md:flex-row gap-10 md:gap-0 w-full items-center justify-between px-10 md:px-20 py-32 md:pt-40 md:pb-20 bg-orange bg-opacity-10'
     >
       <article className='md:w-1/2 flex flex-col gap-8'>
         <h3 className='font-semibold text-3xl md:text-5xl leading-snug md:leading-[1.5]'>
           Buy and Sell Your Books <span className='text-orange'>for the Best Prices</span>
         </h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiumdod tempor incididunt ut labore et dolore magna aliqua. Nunc non blandit massa enim nec dui. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue. Lacus vestibulum sed arcu non odio euimdod lacinia. Mi tempus imperdiet nulla malesuada.
+          Welcome to iREAD: Your Premier Destination for Digital Reading Delights! Immerse Yourself in a World of Knowledge and Imagination at Our Cutting-Edge E-Library. Explore Endless Pages, Engage with Timeless Classics, and Discover New Horizons in the Digital Realm. Unleash the Power of Words with BookByte Boulevard – Where Every Click Opens a Gateway to Infinite Stories.
         </p>
 
         <div className='flex'>

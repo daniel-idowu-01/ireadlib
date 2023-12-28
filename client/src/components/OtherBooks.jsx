@@ -16,7 +16,7 @@ import { Pagination } from 'swiper/modules';
 const OtherBooks = () => {
 
   const [books, setBooks] = useState([])
-  const slicedBooks = books.slice(4, 10)
+  const slicedBooks = books.slice(3, )
 
   useEffect(() => {
     axios.get('http://localhost:5000/all-books')
