@@ -45,7 +45,7 @@ const UploadBook = () => {
     }
 
     // send data to database
-    fetch('http://localhost:5000/upload-book', {
+    fetch('https://tech-books-backend.onrender.com/upload-book', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -56,7 +56,7 @@ const UploadBook = () => {
       .then(data => {
         alert('Book uploaded');
         form.reset();
-    })
+      })
   }
 
   return (
@@ -100,7 +100,7 @@ const UploadBook = () => {
               placeholder="Author Name"
               required
             />
-          </article> 
+          </article>
         </section>
 
         {/* second row */}
@@ -131,13 +131,13 @@ const UploadBook = () => {
               />
             </div>
 
-            <Select id='inputState' name='category' className='w-full rounded' value={bookCategory} onChange= {handlebookCategory}>
+            <Select id='inputState' name='category' className='w-full rounded' value={bookCategory} onChange={handlebookCategory}>
               {bookCategories.map(category => (
                 <option key={category} value={category}>{category}</option>
               ))}
             </Select>
-             
-          </article> 
+
+          </article>
         </section>
 
         {/* third row */}
@@ -174,7 +174,7 @@ const UploadBook = () => {
               placeholder="Book PDF URL"
               required
             />
-          </article> 
+          </article>
         </section>
 
         <Button type='submit'>Upload Book</Button>

@@ -26,13 +26,13 @@ const EditBooks = () => {
     'Art And Design'
   ]
   const [bookCategory, setBookCategory] = useState(bookCategories[0])
-  
+
   useEffect(() => {
-    axios.get(`http://localhost:5000/book/${id}`)
+    axios.get(`https://tech-books-backend.onrender.com/book/${id}`)
       .then(res => setBookData(res.data))
       .catch(error => console.log(error))
   }, [])
-  
+
   const handlebookCategory = (e) => {
     setBookCategory(e.target.value);
   }
@@ -54,7 +54,7 @@ const EditBooks = () => {
     }
 
     // send data to database
-    fetch(`http://localhost:5000/book/${id}`, {
+    fetch(`https://tech-books-backend.onrender.com/book/${id}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json'
@@ -64,7 +64,7 @@ const EditBooks = () => {
       .then(res => res.json())
       .then(data => {
         alert('Book updated');
-    })
+      })
   }
 
 
@@ -111,7 +111,7 @@ const EditBooks = () => {
               required
               defaultValue={bookData.authorName}
             />
-          </article> 
+          </article>
         </section>
 
         {/* second row */}
@@ -143,13 +143,13 @@ const EditBooks = () => {
               />
             </div>
 
-            <Select id='inputState' name='category' className='w-full rounded' value={bookCategory} onChange= {handlebookCategory}>
+            <Select id='inputState' name='category' className='w-full rounded' value={bookCategory} onChange={handlebookCategory}>
               {bookCategories.map(category => (
                 <option key={category} value={category}>{category}</option>
               ))}
             </Select>
-             
-          </article> 
+
+          </article>
         </section>
 
         {/* third row */}
@@ -188,7 +188,7 @@ const EditBooks = () => {
               defaultValue={bookData.bookPDFURL}
               required
             />
-          </article> 
+          </article>
         </section>
 
         <Button type='submit'>Update Book</Button>

@@ -7,7 +7,7 @@ const ManageBooks = () => {
   const [allBooks, setAllBooks] = useState([])
 
   useEffect(() => {
-    fetch('http://localhost:5000/all-books')
+    fetch('https://tech-books-backend.onrender.com/all-books')
       .then(res => res.json())
       .then(data => setAllBooks(data))
 
@@ -15,7 +15,7 @@ const ManageBooks = () => {
 
   // delete a book
   const handleDelete = (id) => {
-    fetch(`http://localhost:5000/book/${id}`, {
+    fetch(`https://tech-books-backend.onrender.com/book/${id}`, {
       method: 'DELETE'
     })
       .then(res => res.json())
@@ -42,7 +42,7 @@ const ManageBooks = () => {
             <span >Edit or Manage</span>
           </Table.HeadCell>
         </Table.Head>
-          {
+        {
           allBooks.map((book, index) => (
             <Table.Body className='divide-y' key={book._id}>
               <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
@@ -58,7 +58,7 @@ const ManageBooks = () => {
                 <Table.Cell>
                   <Link
                     to={`/admin/dashboard/edit-book/${book._id}`}
-                    className="font-medium text-cyan-600 hover:underline dark:text-cyan-500 mr-5" 
+                    className="font-medium text-cyan-600 hover:underline dark:text-cyan-500 mr-5"
                   >
                     Edit
                   </Link>
@@ -70,8 +70,8 @@ const ManageBooks = () => {
                 </Table.Cell>
               </Table.Row>
             </Table.Body>
-            ))
-          }
+          ))
+        }
       </Table>
     </div>
   )

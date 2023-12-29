@@ -8,7 +8,7 @@ const Shop = () => {
   const [books, setBooks] = useState([])
 
   useEffect(() => {
-    axios.get('http://localhost:5000/all-books')
+    axios.get('https://tech-books-backend.onrender.com/all-books')
       .then(res => setBooks(res.data))
       .catch(error => console.log(error))
   }, [])
@@ -21,7 +21,7 @@ const Shop = () => {
         <h2 className='font-semibold text-3xl md:text-5xl leading-snug md:leading-[1.5] text-center'>
           All Books
         </h2>
-        
+
         <div className='grid gap-8 my-12 md:grid-cols-3 lg:grid-cols-4'>
           {books.map((book, index) => (
             <Card

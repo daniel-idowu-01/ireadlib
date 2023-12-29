@@ -1,4 +1,4 @@
-import React, { useState,  useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import BookCard from './BookCard';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
@@ -16,10 +16,10 @@ import { Pagination } from 'swiper/modules';
 const OtherBooks = () => {
 
   const [books, setBooks] = useState([])
-  const slicedBooks = books.slice(3, )
+  const slicedBooks = books.slice(3,)
 
   useEffect(() => {
-    axios.get('http://localhost:5000/all-books')
+    axios.get('https://tech-books-backend.onrender.com/all-books')
       .then(res => setBooks(res.data))
       .catch(error => console.log(error))
   }, [])
@@ -59,10 +59,10 @@ const OtherBooks = () => {
               <BookCard {...book} />
             </Link>
           </SwiperSlide>
-        
-      ))}
+
+        ))}
       </Swiper>
-      
+
     </div>
   )
 }

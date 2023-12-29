@@ -7,9 +7,9 @@ const SingleBook = () => {
 
   const { id } = useParams();
   const [bookData, setBookData] = useState([])
-  
+
   useEffect(() => {
-    axios.get(`http://localhost:5000/book/${id}`)
+    axios.get(`https://tech-books-backend.onrender.com/book/${id}`)
       .then(res => setBookData(res.data))
       .catch(error => console.log(error))
   }, [])
@@ -18,7 +18,7 @@ const SingleBook = () => {
   return (
     <div>
       <NavBar />
-      
+
       <div>
         <p>{bookData.authorName}</p>
         <p>{bookData.bookTitle}</p>
