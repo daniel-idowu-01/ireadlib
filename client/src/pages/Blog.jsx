@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavBar, TheFooter } from '../components'
+import { NavBar, TheFooter, BlogComp } from '../components'
 
 const Blog = () => {
   return (
@@ -10,6 +10,8 @@ const Blog = () => {
         <h2 className='font-semibold text-3xl md:text-5xl leading-snug md:leading-[1.5] text-center'>
           Blog
         </h2>
+
+        <BlogComp />
       </div>
 
       <TheFooter />

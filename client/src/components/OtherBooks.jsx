@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import BookCard from './BookCard';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import ClipLoader from "react-spinners/ClipLoader";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -16,12 +17,20 @@ import { Pagination } from 'swiper/modules';
 const OtherBooks = () => {
 
   const [books, setBooks] = useState([])
+  const [isLoading, setIsLoading] = useState(false)
   const slicedBooks = books.slice(3,)
 
   useEffect(() => {
+    setIsLoading(true)
     axios.get('https://tech-books-backend.onrender.com/all-books')
-      .then(res => setBooks(res.data))
-      .catch(error => console.log(error))
+      .then(res => {
+        setBooks(res.data);
+        setIsLoading(false)
+      })
+      .catch(error => {
+        console.log(error)
+        setIsLoading(false)
+      })
   }, [])
 
   return (
@@ -30,7 +39,17 @@ const OtherBooks = () => {
         Other Books
       </h2>
 
-      <Swiper
+      {isLoading
+          ? 
+          <div className="flex justify-center items-center mt-10">
+            <ClipLoader
+              color={'#FFD700'}
+              loading={isLoading}
+              size={30}
+            />
+          </div>
+          :
+        <Swiper
         slidesPerView={1}
         spaceBetween={10}
         pagination={{
@@ -61,7 +80,7 @@ const OtherBooks = () => {
           </SwiperSlide>
 
         ))}
-      </Swiper>
+      </Swiper>}
 
     </div>
   )

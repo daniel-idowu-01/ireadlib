@@ -2,6 +2,7 @@ import React, { useContext, useEffect } from 'react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { AuthContext } from '../context/AuthProvider'
+import { MdOutlineCancel } from "react-icons/md";
 
 const NavBar = () => {
 
@@ -94,8 +95,11 @@ const NavBar = () => {
 
       {/* sidebar for mobile view */}
       <section
-        className={`${sidebar ? '-left-0' : '-left-1/2'} transition-all absolute w-1/2 top-0 h-screen md:hidden bg-white z-20`}
+        className={`${sidebar ? '-left-0' : '-left-2/3'} shadow-md transition-all absolute w-2/3 top-0 h-screen md:hidden bg-white z-20`}
       >
+        <MdOutlineCancel
+          onClick={() => setSideBar(false)}
+          className='w-10 h-10 relative left-5 top-5' />
         <div className='relative top-14 flex flex-col gap-10'>
           {
             navLinks.map((link) => (

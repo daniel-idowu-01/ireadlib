@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom"
 import { Home, About, Blog, Shop, SellEbook, SingleBook, SignUp, Login, LogOut } from "./pages"
 import { Dashboard, DashboardLayout, UploadBook, ManageBooks, EditBooks } from "./dashboard/"
 import PrivateRoute from "./PrivateRoute/PrivateRoute"
+import { BlogInfo } from "./components"
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
           <Route path='/sign-up' element={<SignUp />} />
           <Route path='/login' element={<Login />} />
           <Route path='/logout' element={<LogOut />} />
+          <Route path='/blog/:id' element={<BlogInfo />} />
+
 
           <Route element={<DashboardLayout />}>
             <Route element={<PrivateRoute />}>
