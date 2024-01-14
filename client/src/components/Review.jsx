@@ -13,6 +13,8 @@ import { FaStar } from 'react-icons/fa'
 import { Avatar } from 'flowbite-react';
 import ProfileImage from '../assets/images/profile.jpg'
 
+import data from '../data/ReviewData'
+
 const Review = () => {
   return (
     <section className='px-10 sm:px-20 py-10 sm:py-20'>
