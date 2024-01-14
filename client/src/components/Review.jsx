@@ -68,7 +68,7 @@ const Review = () => {
                   className='w-10 mb-4'
                 />
                 <h5 className='text-lg font-medium'>Samantha R.</h5>
-                <p className='text-base'>CEO, Volab LTD</p>
+                <p className='text-base'>Accountant</p>
               </div>
             </div>
           </SwiperSlide>
@@ -94,7 +94,7 @@ const Review = () => {
                   className='w-10 mb-4'
                 />
                 <h5 className='text-lg font-medium'>Alex K.</h5>
-                <p className='text-base'>CEO, Volab LTD</p>
+                <p className='text-base'>Marketer</p>
               </div>
             </div>
           </SwiperSlide>
@@ -120,7 +120,7 @@ const Review = () => {
                   className='w-10 mb-4'
                 />
                 <h5 className='text-lg font-medium'>Emily M.</h5>
-                <p className='text-base'>CEO, Volab LTD</p>
+                <p className='text-base'>Software Developer</p>
               </div>
             </div>
           </SwiperSlide>
@@ -146,7 +146,7 @@ const Review = () => {
                   className='w-10 mb-4'
                 />
                 <h5 className='text-lg font-medium'>Jake H.</h5>
-                <p className='text-base'>CEO, Volab LTD</p>
+                <p className='text-base'>Student</p>
               </div>
             </div>
           </SwiperSlide>
