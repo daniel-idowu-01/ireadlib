@@ -8,7 +8,7 @@ const data = [
     job: 'Accountant'
   },
   {
-    comment: "s a voracious reader, I was thrilled to discover iREAD. The platform's sleek design and easy navigation make it a joy to explore. I appreciate the curated collections and the ability to find both popular titles and hidden gems. It has become my go-to destination for discovering new literary wonders!",
+    comment: "As a voracious reader, I was thrilled to discover iREAD. The platform's sleek design and easy navigation make it a joy to explore. I appreciate the curated collections and the ability to find both popular titles and hidden gems. It has become my go-to destination for discovering new literary wonders!",
     image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bWVufGVufDB8fDB8fHww',
     name: 'Alex K.',
     job: 'Marketer'
