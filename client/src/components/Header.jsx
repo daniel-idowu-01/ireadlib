@@ -11,7 +11,7 @@ const Header = () => {
           Buy and Sell Your Books <span className='text-orange'>for the Best Prices</span>
         </h3>
         <p>
-          Welcome to iREAD: Your Premier Destination for Digital Reading Delights! Immerse Yourself in a World of Knowledge and Imagination at Our Cutting-Edge E-Library.
+          <b>Welcome to iREAD:</b> Your Premier Destination for Digital Reading Delights! Immerse Yourself in a World of Knowledge and Imagination at Our Cutting-Edge E-Library.
         </p>
 
         <div className='flex'>
