@@ -7,7 +7,7 @@ const PromoBanner = () => {
     <section className='px-10 sm:px-20 py-10 bg-orange bg-opacity-10'>
       <article className='flex flex-col sm:flex-row gap-10 justify-between items-center'>
         <div className='sm:w-1/2'>
-          <h2 className='text-4xl font-bold mb-6 leading-snug'>
+          <h2 className='text-3xl md:text-4xl font-bold mb-6 leading-snug'>
             2023 National Book Awards For Fiction Shortlist
           </h2>
 

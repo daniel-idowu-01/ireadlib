@@ -99,14 +99,14 @@ const NavBar = () => {
       >
         <MdOutlineCancel
           onClick={() => setSideBar(false)}
-          className='w-10 h-10 relative left-5 top-5' />
-        <div className='relative top-14 flex flex-col gap-10'>
+          className='w-7 h-7 relative left-5 top-5' />
+        <div className='relative top-14 flex flex-col divide-y-2'>
           {
             navLinks.map((link) => (
               <Link
                 key={link.path}
                 to={`/${link.path}`}
-                className='hover:opacity-80 hover:cursor-pointer mx-auto'
+                className='hover:opacity-80 hover:cursor-pointer mx-auto p-5'
               >
                 {link.title}
               </Link>
